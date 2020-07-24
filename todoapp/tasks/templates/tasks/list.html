@@ -5,6 +5,17 @@
     <title>Tasks Application</title>
 </head>
 <body>
-    <h1>Tasks Application</h1>
+    <h2>To Do Application</h2>
+    <hr>
+    <form method="POST" action="/">
+        {% csrf_token %}
+        {{ form.title }}
+        <input type="submit" name="Create Task">
+    </form>
+    <div>
+    {% for task in tasks %}
+        <p>{{ task }}</p>
+    {% endfor %}
+    </div>
 </body>
 </html>
