@@ -1,0 +1,11 @@
+{% extends 'tasks/base.html' %}
+{% block content %}
+<h3 align="center">Update Task</h3>
+<div class="item-row" align="center">
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form }}
+        <input class="btn btn-info" type="submit" name="Update Task" value="Confirm Update">
+    </form>
+</div>
+{% endblock content %}
