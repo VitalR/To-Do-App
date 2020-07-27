@@ -1,2 +1,2 @@
 # To-Do-App
-To-Do App using Django and Bootstrat
+To-Do App made with Django and Bootstrat
